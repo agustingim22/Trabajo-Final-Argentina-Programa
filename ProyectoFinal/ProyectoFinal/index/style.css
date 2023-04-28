@@ -1,0 +1,301 @@
+/*----------------HEADER-------------------*/
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #252750;
+  color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+
+}
+
+
+
+.logo {
+  margin-left: 1%;
+}
+
+.logo img{
+  width: 160px;
+  
+}
+
+/*-----------------------------------------*/
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #aeaeae;
+  font-family: "Varela Round", sans-serif;
+  background-image: url(Sin\ título-1.png);
+}
+
+.barra_nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 50px;
+  list-style: none;
+}
+
+.barra_nav li {
+  width: 120px;
+  height: 30px;
+  text-align: center;
+}
+
+.barra_nav li a {
+  font-size: 22px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.45s;
+}
+
+.barra_nav li:hover a {
+  color: #d94f5c;
+}
+
+form {
+  display: absolute;
+  align-items: center;
+
+}
+
+
+input[type="text"] {
+  padding: 10px 50px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  flex-grow: 1;
+  margin-left: 200px;
+
+}
+
+
+button[type="submit"] {
+  margin-left: 10px;
+  padding: 10px 30px;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d94f5c;
+  color: aliceblue;
+}
+
+
+main {
+  max-width: 1300px;
+  margin: 0 auto;
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+  
+  /*----------------PRODUCTOS-------------------*/
+  
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Open Sans', sans-serif;
+  }
+  .container-form{
+      width: 100%;
+      max-width: 1500px;
+      height: 300px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-gap: 50px;
+      margin-top: 90px;
+      box-sizing:content-box;
+    background-color:#d94f5c;
+    border-radius: 20px;
+    opacity: .9;
+    }
+  .container-form h2{
+      margin-bottom: 15px;
+      font-size: 35px;
+      color: rgb(255, 253, 253);
+  }
+  .container-form p{
+      font-size: 17px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+      color: rgb(253, 252, 252);
+  }
+  .container-form a{
+      font-size: 17px;
+      display: inline-block;
+      text-decoration: none;
+      width: 100%;
+      margin-bottom: 15px;
+      font-weight: 700;
+      color: rgb(221, 221, 221);
+  }
+  .container-form a i{
+      color:#ffffff;
+      margin-right: 10px;
+  }
+  .container-form form .campo, textarea{
+      width: 100%;
+      padding: 15px 20px;
+      font-size: 16px;
+      border: 1px solid #000000;
+      margin-bottom: 20px;
+      border-radius: 3px;
+      outline: 0px;
+  }
+  .container-form form textarea{
+      max-width: 530px;
+      min-width: 530px;
+      min-height: 140px;
+      max-height: 150px;
+  }
+  .container-form .btn-enviar{
+      padding: 15px;
+      font-size: 16px;
+      border: none;
+      outline: 0px;
+      background: rgb(0, 0, 0);
+      color: rgb(254, 251, 251, 255);
+      border-radius: 3px;
+      cursor: pointer;
+      transition: all 300ms ease;
+  }
+  .container-form .btn-enviar:hover{
+      background:#252750;
+      color: #ffffff;
+  }
+  section{
+    
+    display: flex;
+    
+    width: 1900px;
+    height: 88vh;
+  align-content: center;   
+}
+  
+  section img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .9;
+    transition: .5s ease;
+  }
+  section img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+  }
+
+
+/* Alineamos los span y una vez alineados donde los queremos recien ahi les ponemos "display:none" para que el hover los muestre después con display:block */
+.span1{
+  display: none;
+  position: absolute;
+  top: 500px;
+  margin-left: 90px;
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.span2{
+  display: none;
+  position: absolute;
+  top: 500px;
+  margin-left: 450px;
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/* Para que si pasamos el mouse sobre el texto solamente aparezca */
+.span1:hover{
+  display: block;
+}
+.span2:hover{
+  display: block;
+}
+
+
+
+/* Para que si pasamos el mouse sobre la imagen nos aparezca el texto */
+section img:hover +  .span1{
+  display: block;
+  box-sizing: content-box;
+  border-radius: 10px;
+opacity: .9;
+background-color: #252750;
+padding: 10px 80px;
+margin-left: 200px;
+}
+section img:hover +  .span2{
+  display: block;
+  box-sizing: content-box;
+  border-radius: 10px;
+opacity: .9;
+background-color: #252750;
+padding: 10px 80px;
+margin-left: 760px;
+}
+
+/*----------------------FOOTER--------------------*/
+footer {
+  background-color: #252750;
+  color: #fff;
+  padding: 5px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+}
+
+.social-buttons a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-right: 30px;
+
+}
